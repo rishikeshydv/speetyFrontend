@@ -8,7 +8,7 @@
   transform: translateY(-10px);
   transition: transform 0.3s ease;
   margin-right: 20px; /* Add margin between cards */
-  margin-top: 120px;
+  margin-top: 80px;
   display: flex; /* Use flexbox */
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items horizontally */
@@ -39,6 +39,6 @@
 
 .description {
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 20px;
   text-align: center; /* Center the text */
 }

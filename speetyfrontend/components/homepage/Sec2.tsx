@@ -5,7 +5,7 @@ import Image from '@/services/Image'
 export default function Sec2() {
   return (
     <div className="bg-gray-200">
-    <section className='py-20'>
+    <section className='py-10'>
         <div className="card-container flex flex-row justify-center">
       <Card 
         imageSrc="/hourglass.png"

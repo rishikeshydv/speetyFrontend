@@ -1,6 +1,9 @@
 import Sec1 from "@/components/homepage/Sec1";
 import Sec2 from "@/components/homepage/Sec2";
+import Sec3 from "@/components/homepage/Sec3";
+import Sec4 from "@/components/homepage/Sec4";
 import { Poppins } from 'next/font/google';
+
 
 
 const poppins = Poppins({
@@ -14,6 +17,9 @@ export default function Home() {
     <div className={poppins.className}>
       <Sec1 />
       <Sec2 />
+      <Sec3 />
+      <Sec4 />
+
     </div>
   );
 }
