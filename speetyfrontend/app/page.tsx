@@ -1,4 +1,5 @@
 import Sec1 from "@/components/homepage/Sec1";
+import Sec2 from "@/components/homepage/Sec2";
 import { Poppins } from 'next/font/google';
 
 
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <div className={poppins.className}>
       <Sec1 />
+      <Sec2 />
     </div>
   );
 }
