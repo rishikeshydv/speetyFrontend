@@ -4,6 +4,7 @@ import Sec3 from "@/components/homepage/Sec3";
 import Sec4 from "@/components/homepage/Sec4";
 import Sec5 from "@/components/homepage/Sec5";
 import Sec6 from "@/components/homepage/Sec6";
+import Sec7 from "@/components/homepage/Sec7";
 import { Poppins } from 'next/font/google';
 
 
@@ -23,6 +24,7 @@ export default function Home() {
       <Sec4 />
       <Sec5 />
       <Sec6 />
+      <Sec7 />
     </div>
   );
 }
