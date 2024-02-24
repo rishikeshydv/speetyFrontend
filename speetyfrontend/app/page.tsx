@@ -2,6 +2,7 @@ import Sec1 from "@/components/homepage/Sec1";
 import Sec2 from "@/components/homepage/Sec2";
 import Sec3 from "@/components/homepage/Sec3";
 import Sec4 from "@/components/homepage/Sec4";
+import Sec5 from "@/components/homepage/Sec5";
 import { Poppins } from 'next/font/google';
 
 
@@ -19,7 +20,7 @@ export default function Home() {
       <Sec2 />
       <Sec3 />
       <Sec4 />
-
+      <Sec5 />
     </div>
   );
 }
