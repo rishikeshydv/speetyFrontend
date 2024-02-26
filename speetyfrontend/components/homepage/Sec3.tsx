@@ -1,6 +1,6 @@
 import React from 'react'
-import Feature from '@/services/feature'
-import Image from '@/services/Image'
+import Feature from '@/services/homepage/feature'
+import Image from '@/services/homepage/Image'
 export default function Sec3() {
   return (
     <div>

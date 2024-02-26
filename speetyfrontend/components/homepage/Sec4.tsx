@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "@/services/Image";
-import Prompts from "@/services/prompts";
+import Image from "@/services/homepage/Image";
+import Prompts from "@/services/homepage/prompts";
 
 export default function Sec4() {
   return (

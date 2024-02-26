@@ -1,6 +1,6 @@
 import React from 'react'
-import Card from '@/services/cards'
-import Image from '@/services/Image'
+import Card from '@/services/homepage/cards'
+import Image from '@/services/homepage/Image'
 
 export default function Sec2() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import Bottom from '@/services/Bottom'
+import Bottom from '@/services/homepage/Bottom'
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 export default function Sec7() {

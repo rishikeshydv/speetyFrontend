@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "/styles/Bottom.module.css"
+import styles from "/styles/homepage/Bottom.module.css"
 interface Props {
     title:string,
     opt1:string,

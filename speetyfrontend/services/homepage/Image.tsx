@@ -1,7 +1,7 @@
 // components/RoundedImage.js
 
 import React from 'react';
-import styles from '/styles/Image.module.css';
+import styles from '/styles/homepage/Image.module.css';
 
 interface Props {
     src: string;

@@ -1,4 +1,4 @@
-import VerticalBox from "@/services/VerticalBox";
+import VerticalBox from "@/services/homepage/VerticalBox";
 import React from "react";
 export default function Sec5() {
   return (

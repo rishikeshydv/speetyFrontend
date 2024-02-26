@@ -1,7 +1,7 @@
 // VerticalBox.tsx
 
 import React from 'react';
-import styles from '/styles/Vbox.module.css'; // Correct relative path
+import styles from '/styles/homepage/Vbox.module.css'; // Correct relative path
 
 interface VerticalBoxProps {
     title: string;

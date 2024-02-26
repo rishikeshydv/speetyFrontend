@@ -1,14 +1,12 @@
-// components/Card.js
+import styles from '/styles/homepage/Feature.module.css';
 
-import styles from '/styles/Card.module.css';
-
-interface CardProps {
+interface FeatProps {
   imageSrc: string;
   title: string;
   description: string;
 }
 
-const Card: React.FC<CardProps> = ({ imageSrc, title, description }) => {
+const Feature: React.FC<FeatProps> = ({ imageSrc, title, description }) => {
   return (
     <div className={styles.card}>
       <img src={imageSrc} alt={title} className={styles.image} />
@@ -18,4 +16,4 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, description }) => {
   );
 };
 
-export default Card;
+export default Feature;

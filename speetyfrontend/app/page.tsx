@@ -5,16 +5,8 @@ import Sec4 from "@/components/homepage/Sec4";
 import Sec5 from "@/components/homepage/Sec5";
 import Sec6 from "@/components/homepage/Sec6";
 import Sec7 from "@/components/homepage/Sec7";
-import { Poppins } from 'next/font/google';
+import poppins from "@/font/font";
 
-
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-poppins',
-  weight: ['400', '500', '600', '700', '800', '900']
-});
 export default function Home() {
   return (
     <div className={poppins.className}>

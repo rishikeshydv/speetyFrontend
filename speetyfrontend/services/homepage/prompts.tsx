@@ -1,7 +1,7 @@
 // prompts.tsx
 
 import React from 'react';
-import styles from '/styles/Prompt.module.css'; // Correct relative path
+import styles from '/styles/homepage/Prompt.module.css'; // Correct relative path
 interface PromptProps {
     title: string;
     promptUrl: string;
