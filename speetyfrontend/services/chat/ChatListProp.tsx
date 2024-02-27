@@ -1,36 +1,34 @@
-//this file creates a prop for each user connected and their messages
-
-import React from 'react'
+import React from 'react';
 
 interface ChatList {
-    imgUrl:string,
-    userName:string,
-    lastMsg:string,
-    lastMsgTime:string,
-    newMsg:boolean
-
+    imgUrl: string;
+    userName: string;
+    lastMsg: string;
+    lastMsgTime: string;
+    newMsg: boolean;
 }
-const ChatListProp = (userInfo:ChatList) => {
-    if (userInfo.newMsg)  {
+
+const ChatListProp: React.FC<ChatList> = ({ imgUrl, userName, lastMsg, lastMsgTime, newMsg }) => {
+    if (newMsg) {
         return (
             <div className='bg-blue-100 rounded-2xl'>
-                {userInfo.newMsg}
-                <img src="/user.png" alt="user1" className='w-12 h-12'  />
-                <h1 className='font-bold text-2xl'>{userInfo.userName}</h1>
-                <h3>New Message</h3>        
+                <img src="/user.png" alt="user1" className='w-12 h-12' />
+                <h1 className='font-bold text-2xl'>{userName}</h1>
+                <h3>New Message</h3>
             </div>
-          )
+        );
+    } else {
+        return (
+            <div className='flex bg-gray-100 rounded-2xl'>
+                <img src="/user.png" alt="user1" className='w-12 h-12' />
+                <div className='ml-5'>
+                <h1 className='font-bold text-2xl'>{userName}</h1>
+                <h3>{lastMsg}</h3>
+                </div>  
+                <h3 className='mt-5 ml-5'>{lastMsgTime}</h3>
+            </div>
+        );
     }
-else {
-    <div className='bg-gray-100 rounded-2xl'>
-    {userInfo.newMsg}
-    <img src="/user.png" alt="user1" className='w-12 h-12'  />
-    <h1 className='font-bold text-2xl'>{userInfo.userName}</h1>
-    <h3>{userInfo.lastMsg}</h3>
-    <h3>{userInfo.lastMsgTime}</h3>
-</div>
-}
-
-}
+};
 
 export default ChatListProp;

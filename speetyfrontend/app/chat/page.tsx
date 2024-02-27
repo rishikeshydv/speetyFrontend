@@ -3,14 +3,15 @@ import poppins from "@/font/font";
 import LeftmostBar from '@/components/chat/LeftmostBar';
 import TopLeft from '@/components/chat/TopLeft';
 import TopRight from '@/components/chat/TopRight';
+import UserList from '@/components/chat/userList';
 
 export default function page() {
   return (
     <div className={poppins.className}>
-<LeftmostBar />
-
+{/* <LeftmostBar />
 <TopLeft />
-<TopRight />
+<TopRight /> */}
+<UserList />  
 
     </div>
   )
