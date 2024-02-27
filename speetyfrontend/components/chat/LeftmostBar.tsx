@@ -3,7 +3,8 @@ import React from 'react';
 const LeftmostBar = () => {
   return (
 
-    <div className={`fixed flex flex-col h-screen left-12`}>
+    // <div className={`fixed flex flex-col h-screen left-12`}>
+    <div> 
     <div className="flex-grow bg-black w-40 mx-auto my-10 rounded-2xl shadow-lg">
         <div className='mt-40'>
     <img
