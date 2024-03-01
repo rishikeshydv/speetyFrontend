@@ -30,7 +30,7 @@ export default function ChatList() {
       id: "1",
       messageInfo: {
         msg: "Hello, how are you?",
-        _datetime: "2024-02-27 10:00:00",
+        _datetime: "2024-02-27 10:00:00"
       },
     },
     {
@@ -79,7 +79,7 @@ export default function ChatList() {
   return (
     <div>
       {user1Messages.map((message, index) => (
-        <div key={message.id} className="right-10">
+        <div key={message.id} className="flex justify-end">
           <MessageProp
             message={message.messageInfo["msg"]}
             msgTime={message.messageInfo["_datetime"]}
@@ -87,7 +87,7 @@ export default function ChatList() {
           />
           {/* Check if there are more messages in user2Messages */}
           {index < user2Messages.length && (
-            <div className="left-10">
+            <div className="flex justify-start">
               <MessageProp
                 message={message.messageInfo["msg"]}
                 msgTime={message.messageInfo["_datetime"]}
@@ -95,7 +95,7 @@ export default function ChatList() {
               />
             </div>
           )}
-        </div>
+  </div>
       ))}
     </div>
   );
