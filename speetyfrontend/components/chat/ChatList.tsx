@@ -79,8 +79,8 @@ export default function ChatList() {
   return (
     <div>
       {user1Messages.map((message, index) => (
-        <div key={message.id} className="flex justify-center  bg-gray-300 rounded-2xl ">
-        <div className="flex justify-center items-center bg-gray-100 w-80 h-20 rounded-2xl px-2">
+        <div key={message.id} className={`fixed flex bg-gray-200 rounded-3xl shadow-sm top-28 right-6 bottom-24 left-1/3`}>
+        <div className="flex justify-center items-center bg-gray-100 mt-3 ml-3 w-80 h-20 rounded-2xl px-2">
           <MessageProp
             message={message.messageInfo["msg"]}
             msgTime={message.messageInfo["_datetime"]}
@@ -88,7 +88,7 @@ export default function ChatList() {
           </div>
           {/* Check if there are more messages in user2Messages */}
           {index < user2Messages.length && (
-            <div className="flex justify-center items-center mt-20 ml-10 bg-blue-400 w-80 h-20 rounded-2xl">
+            <div className="flex justify-center items-center mt-20 ml-80 bg-blue-400 w-80 h-20 rounded-2xl">
               <MessageProp
                 message={user2Messages[index].messageInfo["msg"]}
                 msgTime={user2Messages[index].messageInfo["_datetime"]}

@@ -12,7 +12,7 @@ export default function page() {
     <div className={poppins.className}>
 <LeftmostBar />
 <TopLeft />
-<TopRight />
+ <TopRight />
 <UserList />  
 <ChatList />
 <SendBar />
