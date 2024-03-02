@@ -68,7 +68,7 @@ export default function ChatList() {
       id: "6",
       messageInfo: {
         msg: "Good morning! It's going well, thanks!",
-        _datetime: "2024-02-2809:35:00",
+        _datetime: "2024-02-28 09:35:00",
       },
     },
   ];
@@ -79,19 +79,19 @@ export default function ChatList() {
   return (
     <div>
       {user1Messages.map((message, index) => (
-        <div key={message.id} className="flex justify-end">
+        <div key={message.id} className="flex justify-center  bg-gray-300 rounded-2xl ">
+        <div className="flex justify-center items-center bg-gray-100 w-80 h-20 rounded-2xl px-2">
           <MessageProp
             message={message.messageInfo["msg"]}
             msgTime={message.messageInfo["_datetime"]}
-            msgColor="blue"
           />
+          </div>
           {/* Check if there are more messages in user2Messages */}
           {index < user2Messages.length && (
-            <div className="flex justify-start">
+            <div className="flex justify-center items-center mt-20 ml-10 bg-blue-400 w-80 h-20 rounded-2xl">
               <MessageProp
-                message={message.messageInfo["msg"]}
-                msgTime={message.messageInfo["_datetime"]}
-                msgColor="white"
+                message={user2Messages[index].messageInfo["msg"]}
+                msgTime={user2Messages[index].messageInfo["_datetime"]}
               />
             </div>
           )}

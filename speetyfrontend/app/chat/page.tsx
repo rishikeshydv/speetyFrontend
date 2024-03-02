@@ -5,15 +5,18 @@ import TopLeft from '@/components/chat/TopLeft';
 import TopRight from '@/components/chat/TopRight';
 import UserList from '@/components/chat/userList';
 import ChatList from '@/components/chat/chatList';
+import SendBar from '@/components/chat/sendBar';
 
 export default function page() {
   return (
     <div className={poppins.className}>
-{/* <LeftmostBar />
+<LeftmostBar />
 <TopLeft />
 <TopRight />
-<UserList />   */}
+<UserList />  
 <ChatList />
+<SendBar />
+
 
     </div>
   )
