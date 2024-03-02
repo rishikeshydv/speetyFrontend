@@ -1,6 +1,5 @@
 "use client"
 import React from "react";
-import Image from "next/image";
 import { AiOutlineDoubleRight } from "react-icons/ai";
 import Typist from "react-typist-component";
 
