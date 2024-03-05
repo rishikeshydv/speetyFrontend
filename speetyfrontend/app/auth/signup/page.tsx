@@ -6,6 +6,8 @@ import poppins from "@/font/font";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { AiFillYahoo } from "react-icons/ai";
 import { FaMicrosoft } from "react-icons/fa6";
+import Header from '@/components/Header';
+
 export default function SignUp() {
   return (
     <div className={poppins.className}>
