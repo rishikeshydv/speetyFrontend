@@ -2,8 +2,7 @@
 import React,{useState} from 'react'
 import poppins from "@/font/font";
 
-
-export default function Products() {
+export default function SearchBar() {
     const [formData,setFormData] = useState({zip:"",searchType:"",priceRange:"",beds:"",baths:"",homeType:""});
     const handleSubmit= (event:React.FormEvent<HTMLFormElement> ) => {
         event.preventDefault();
