@@ -4,7 +4,7 @@ import Sec3 from "@/components/homepage/Sec3";
 import Sec4 from "@/components/homepage/Sec4";
 import Sec5 from "@/components/homepage/Sec5";
 import Sec6 from "@/components/homepage/Sec6";
-import Sec7 from "@/components/homepage/Sec7";
+import Sec7 from "@/components/Footer";
 import poppins from "@/font/font";
 
 export default function Home() {
