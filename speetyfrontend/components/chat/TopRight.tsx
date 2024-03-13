@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function TopRight() {
   //use realtime firebase to get the status
   var onlineStatus = "•Online";

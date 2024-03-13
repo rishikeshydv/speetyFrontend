@@ -1,13 +1,15 @@
 "use client"
 
-import React from "react";
+import React,{useState} from "react";
 import poppins from "@/font/font";
 import Typist from "react-typist-component";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { AiFillYahoo } from "react-icons/ai";
 import { FaMicrosoft } from "react-icons/fa6";
-
 export default function Login() {
+
+
+
   return (
     <div className={poppins.className}>
       <div className="flex">
@@ -39,12 +41,12 @@ export default function Login() {
         </div>
         <div className="flex flex-col">
         <label className="block uppercase tracking-wide text-lg font-semibold text-gray-800">Email</label>
-        <input type="text" required className="rounded-md bg-gray-200 h-16 w-96" />
+        <input type="text" required className="rounded-md bg-gray-200 h-16 w-96"  />
         <label className="block uppercase tracking-wide text-lg font-semibold text-gray-800">Password</label>
-        <input type="text" required className="rounded-md bg-gray-200 h-16 w-96" />
+        <input type="text" required className="rounded-md bg-gray-200 h-16 w-96"/>
         <a href="#" className="mt-4 text-blue-700">Forgot Password?</a>
         <button className="bg-gray-900 text-white mt-2 rounded-md h-12 w-96 font-bold text-xl">Continue</button>
-        <h3 className="mt-2 text-center text-xl">Don't have an account yet? <a href="#" className="text-blue-600">Sign up!</a></h3>
+        <h3 className="mt-2 text-center text-xl">Don&apos;t have an account yet? <a href="#" className="text-blue-600">Sign up!</a></h3>
         </div>
       </div>
     </div>
